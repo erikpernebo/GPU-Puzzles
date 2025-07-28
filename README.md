@@ -1,5 +1,5 @@
 # Erik Pernebo - My Key Takeaways 
-## See my_puzzle_solutions.ipynb for my solutions
+### See [my puzzle solutions](https://github.com/erikpernebo/GPU-Puzzles/blob/main/my_puzzle_solutions.ipynb) 
 
 Completing this set of GPU puzzles helped teach me the basics of working
 with CUDA as well as some key kernel-building concepts. I was able to work
