@@ -1,3 +1,17 @@
+# Erik Pernebo - My Key Takeaways
+
+Completing this set of GPU puzzles helped teach me the basics of working
+with CUDA as well as some key kernel-building concepts. I was able to work
+my way up through the easy puzzles and use those concepts to ultimately 
+solve 1D Convolution, Prefix Sum, Axis Sum, and Matmul. 
+
+Here are my key takeaways:
+* Use guards for any vector access for safety and correctness
+* Shared memory > global - Utilize shared memory to minimize global reads
+* Be wary of operations that require looking out of memory that is locally <br>in a block range (i.e. matrix multiply, the local_i and local_j will not span the <br>entire array but since we need dot product of full thing we must scan the rest
+* Adding padding to shared memory can be an effective way to solve issues <br>that arise from vectors unaligned with the TPB
+* Prefix sum is awesome!
+
 # GPU Puzzles
 - by [Sasha Rush](http://rush-nlp.com) - [srush_nlp](https://twitter.com/srush_nlp)
 
